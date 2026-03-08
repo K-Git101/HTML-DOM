@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+    <style>
+        .alert{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: rgb(10, 10, 10);
+            background: aqua;
+            padding: 5px;
+        }
+        body{
+            background-color:rgb(194, 181, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+   <h1 id="heading">Welcome!</h1>
+   <p>Hello</p>
+   <p>How are you?</p> 
+
+   <script>
+    /* First Step:- Do this step first */
+    let div = document.createElement('div');
+    div.id = "paragraph";
+    div.className = "alert";
+    div.innerHTML = "<p> Congratulations!! You have created a div! </p>";
+    document.body.append(div);
+
+    /* Second Step: Do this after completing first step */
+    let heading = document.getElementById("heading");
+    heading.innerHTML = '&#128515;'
+
+    /* Third Step: Do this after completing second step */
+    document.querySelector('header p').innerHTML = "<strong>Good Job!</strong>";
+    
+    </script>
+</body>
+</html>
